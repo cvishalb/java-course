@@ -7,44 +7,37 @@ public class custom_order {
     // STEP 1 PRINTING HELLO WORLD TO CONSOLE
     public static void main(String[] args) {
         
-      System.out.println("Hello World!"); // print Hello World to console
-        
-    // TEST CODE
-    
-    // STEP 2 CREATE A SCANNER OBEJCT, DECLARE VARAIBLES, & PRINT STATEMENTS
-	  
+      Scanner keyboard = new Scanner (System.in); 
 
-	 
-    // Introduce shop and prompt user to input first name
-      
+String firstName = ""; // User's first name
+String itemOrder = ""; // Item ordered
+String frostingType = ""; // Frosting ordered
+String fillingType = ""; // Filling ordered
+String toppings = ""; // Toppings ordered
+String input = "";  // User input
 
-	  
-	  
-    // TEST CODE
-    
-    // STEP 3 INPUT YOUR NAME AND PREPARE TO VIEW MENU
-   
-	  
-      
-    // TEST CODE     
-    
-    // STEP 4 DISPLAY MENU
+double cost = 15.00; // Cost of cake and cupcakes
+final double TAX_RATE = .08;  // Sales tax rate
+double tax; // Amount of tax
 
-	
-      
+// Introduce shop and prompt user to input first name
 
-    // TEST CODE     
-    
-    // STEP 5 PROMPT USER TO ORDER
+System.out.println("Welcome to Java's Cake & Cupcake Shop!");
+System.out.println("We make custom cakes with our secret cake batter!");
 
-  
-	  
-	  
-	  
-      
-    // TEST CODE
-      
-    // STEP 6 PROMPT USER TO CHOOSE FROSTING
+System.out.println();
+System.out.println(firstName + " , your order is as follows: ");
+System.out.println("_________________________________________");
+System.out.println("Item Ordered: " + itemOrder);
+System.out.println("Frosting: " + frostingType);
+System.out.println("Filling: " + fillingType);
+System.out.println("Toppings: " + toppings);
+System.out.println("_________________________________________");
+
+System.out.printf("The cost of your order is: $%.2f\n", cost);
+tax = cost * TAX_RATE;
+System.out.printf("The tax is: $%.2f\n", tax);
+System.out.printf("The total due is: $%.2f\n",(tax + cost));
 
    
 	 
